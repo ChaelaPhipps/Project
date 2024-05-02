@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--this tells the browser which version of HTML to use in rendering the page-->
+<html lang="en"></html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- this refers to a self-closing tag -->
+        <meta name="Skill Construction Webpage" content="Let's assist you to make you home proud!" /> 
+        <meta name="keywords" content="Maintenance, Plumbing, Plastering, Carpentry" />
+        <meta name="viewport" contect="width=device-width, initial-scale-1.0" />
+        <meta name="author" content="Michaela Phipps" />
+        <title>Homepage</title>
+        <!-- link to the external stylesheet (applies to all pages)-->
+        <link rel="stylesheet" href="style.css">
+        <!-- internal stylesheet (applies to this page alone)-->
+        <style>
+            p {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--this shows the logo -->
+            <a href="index.html">Logo</a>
+            <!-- navigation section -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#about-bootcamp">Go to the bootcamp section</a>
+            </nav>
+        </header>
+        <main>
+            <section class="text-center"> 
+              <div>
+                    <!-- this serves as a container -->
+                
+                <h1>Home Page</h1> <!--largest and most important heading-->
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6> <!-- smalledst and least important heading-->
+              </div>
+              <p style="color: brown">
+                This is <br />
+                another paragraph
+              </p>
+            </section>
+            <section class="text-center">
+                <h1>Home Page</h1> <!--largest and most important heading-->
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6> <!-- smalledst and least important heading-->
+                <p>This is a paragraph</p>
+                <p>This is <br/> another paragraph </p> <!--br causes the sentence to move to a new line at insert point --> 
+            </section>
+            <section class="text-center" id="about-bootcamp" >
+                <h1>About the bootcamp</h1>
+                <p>
+                    Training Ground for ambitious people in <span>tech</span> globally.
+                </p>
+                <h6>What will you learn</h6>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>React</p>
+                <p>Redux</p>
+            </section>
+            <p> <strong>This is an important piece of information and so it is in BOLD</strong> <br></p>>
+            <p>This is an <strong>important </strong> word and it only is in BOLD <br> </p>                <p>This is an <em> emphasized </em> word. </p>
+            <p>This is a <b> bold</b> text</p>
+            <p>This is in <i> italics</i></p>
+            <p>This is <mark> important</mark></p>
+            <p>This is <del> important</del> essential </p>
+            <p>This is <sup> important</sup></p>
+            <p>This is <sub> important</sub></p>
+            <div>
+                <h2> Grocery Lists </h2>
+                <ul> <!--unordered lists-->
+                    <li>Milk</li>
+                    <li>Eggs</li>
+                    <li>Yoghurt</li>
+                </ul>
+                <ol type="I"> <!-- ordered lists-->
+                    <li>Sugar</li>
+                    <li>Vegetables</li>
+                    <li>Tomatoes</li>
+                </ol>
+                <ol type="1">
+                    <li>Sugar</li>
+                    <li>Vegetables</li>
+                    <li>Tomatoes</li>
+                </ol>
+                </h2>
+                <ol type="a">
+                    <li>Sugar</li>
+                    <li>Vegetables</li>
+                    <li>Tomatoes</li>
+                </ol>
+            </div>
+            <blockquote cite="https://facebook.com/mybiz/review1"> <!--used to add a section from a source-->
+                <P>I was really happy with the work created by MP and would recommend her services</P>
+            </blockquote><!-- This is used for short quotes-->
+            <q>This is a short quote</q>
+            <p><cite> The Scream</cite> by Edward Munch </p>
+            <form>
+                <div>
+                <label for="fullname"> What is your name? </label>
+                <input 
+                type="text" 
+                id="Full Name" 
+                class="form-element"
+                name="fullname" 
+                placeholder="Type your full Name" 
+                required
+                />
+            </div>
+            <div>
+                <label for="emailaddress"> What is your email address? </label>
+                <input 
+                type="email" 
+                id="email_address" 
+                class="form-element"
+                name="emailaddress" 
+                placeholder="Type your email address"
+                required
+                />
+            </div>
+            <div>
+                <label for="message"> Text </label>
+                <textarea
+                 id="message" 
+                 class="form-element"
+                 name="message" 
+                 placeholder="Type your message" 
+                 rows="5"
+            ></textarea>
+            </div>
+            <div>
+                <label> Select one option - Favourite Web Language</label>
+                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label for="html"> HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS"/>
+                <label for="css"> CSS </label>
+                <input type="radio" id="javascript" name="fav_language" value="Javascript"/>
+                <label for="javascript"> JAVASCRIPT</label>
+            </div>
+            <div>
+                <label> Favoruite Programming Languages </label>
+                <input type="checkbox" id="python" name="fav_programming_lang_1" value="python"/>
+                <label for="python"> Python</label>
+                <input type="checkbox" id="java" name="fav_programming_lang_2" value="java"/>
+                <label for="java"> Java</label>
+                <input type="checkbox" id="ruby" name="fav_programming_lang_3" value="ruby"/>
+                <label for="ruby"> Ruby</label>
+            </div>
+            <div>
+                <label> Select the Niyo Bootcamp of your choice</label><br>
+                <select id="bootcamps" class="form-element" name="bootcamps" multiple> <!-- the word multiple is added if you want your iusers to be able to choose more than one. Otherwise remove it!-->
+                    <option value="software"> 
+                        Software Development bootcamp</option>
+                    <option value="data_analytics"> 
+                        Data Analytics and Project Management bootcamp
+                    </option>
+                    <option value="marketing"> 
+                        Marketing for digital entrepreneurship bootcamp
+                    </option>
+                </select>
+            </div>
+            <!--submit button using an input element-->
+            <!--input type="submit" value="submit"-->
+            <button type="submit" value="Submit"> <!-- this will submit the details entered and automatically reload the page-->
+                <div>
+                    <label> Select the Niyo Bootcamp of your choice</label><br>
+                    <select id="bootcamps" class="form-element" name="bootcamps"> <!-- the word multiple has been removed to allow users to be able to choose only one.-->
+                        <option value="software"> 
+                            Software Development bootcamp</option>
+                        <option value="data_analytics"> 
+                            Data Analytics and Project Management bootcamp
+                        </option>
+                        <option value="marketing"> 
+                            Marketing for digital entrepreneurship bootcamp
+                        </option>
+                    </select>
+                </div>
+                <!--submit button using an input element-->
+                <!--input type="submit" value="submit"-->
+                <button type="submit">"Submit"</button> <!-- this will submit the details entered and automatically reload the page-->
+            </form>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Business</th>
+                </tr>
+                <tr>
+                    <td>Michaela</td>
+                    <td>Cole</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Hopeton</td>
+                    <td>Phipps</td>
+                    <td>6</td>
+                </tr>
+            </table>
+                    <img src="Images/BW_image.jpg" alt="professional black woman"/> 
+                    <audio controls>
+                        <source src="Images/tiger sounds.mp4" type="audio/mp4" /><!--this adds an audio -->
+                        Your browser does not support the audio element
+                    </audio>
+                    <video controls autoplay width="1000 height=1000"> <!--this adds a video -->
+                        <source src="Images/tiger sounds.mp4" type="video/mp4" />
+                        Your browser does not support the video tag
+                    </video>
+        </main>
+        <footer>
+            <a  
+            href="https://twitter.com/niyobootcamps?s=21&t=pGaqXPG0rgChO94aYF2r7g"
+            target="_blank"
+            >
+            Check us out in twitter
+        </a>
+            <p>&copy; Copyright 2024</p>
+        </footer>
+    </body>
+</html>

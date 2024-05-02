@@ -1,0 +1,83 @@
+p{
+    color:red
+}
+
+#about-bootcamp {
+    background: grey;
+    padding: 10px;
+}
+body {
+    background-color: lightgrey;
+}
+nav {
+    background: orange;
+    padding: 8px;
+}
+
+.text-center {
+    text-align: center;
+    background-color: rgb(28, 215,170);
+}
+
+footer {
+    background-color: orange;
+}
+
+.form-element{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0; /* adds space around box*/
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}button {
+    background: purple;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+table{/* if more than one table or image, we give each one an "id" and then use the name instead of table or img*/
+    width: 100%;
+}
+th {
+    font-size: 18px;
+}
+img{
+    /*width: 200px;*/
+    /*height: 100px;*/
+}
+/*
+3 major ways of using colors in CSS
+color name: blue, red, green, yellow
+
+hexadecimal - 16 
+0-9
+a-f
+values between 00 and ff
+
+#rrggbb - 
+#000000 - black 
+#ffffff-white
+
+
+#0f347e
+00
+11
+22
+33
+44
+55
+66
+77
+88
+99
+aa
+bb
+cc
+dd
+ee
+ff
+*/

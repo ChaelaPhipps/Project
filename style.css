@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    
+    padding: 10px;
+    background-color: lightgrey;
+    font-family: "Open Sans", sans-serif;
+    background-image: url("./Images/BW_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
 p{
-    color:red
+    color:red;
+    font-size: 16px;
 }
 
 #about-bootcamp {
+    width: 450px;
+    height: 450px; 
     background: grey;
     padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: aquamarine;
+    
 }
-body {
-    background-color: lightgrey;
-}
+
 nav {
     background: orange;
-    padding: 8px;
+    padding: 16px;
 }
 
 .text-center {
     text-align: center;
     background-color: rgb(28, 215,170);
+    
 }
 
 footer {
@@ -31,11 +55,13 @@ footer {
     border: 1px solid black;
     border-radius: 5px;
 
-}button {
+}
+
+button {
     background: purple;
     color: white;
     padding: 10px;
-    border: 0;
+    border: 0px;
     border-radius: 5px;
     margin-bottom: 10px
 }
@@ -45,10 +71,77 @@ table{/* if more than one table or image, we give each one an "id" and then use 
 th {
     font-size: 18px;
 }
-img{
-    /*width: 200px;*/
-    /*height: 100px;*/
+/* img {
+    width: 200px;
+    height: 100px;
+} This changes size of image*/
+    
+section p {
+text-decoration: underline;
 }
+
+section > p {
+    letter-spacing: 10px; /* spaces out letters in child element*/
+}
+
+section ~ p {
+    word-spacing: 10px;
+    color: yellowgreen;
+}
+
+section + p {
+    text-transform: uppercase;
+}  /* targets those immediately following a p element*/
+
+* {
+    color: orange;
+}/* applies to all elements that don't have a rule already set*/
+
+
+h1 {
+    color: purple;
+}
+
+input [type="email"] {
+    font-size: 30px;
+}
+
+.flex-container {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+} 
+
+.flex-container > div {
+    width: 50%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    gap: 10px;
+}
+
+.grid-container > div {
+    background: pink;
+    padding: 10px;
+}
+@media  screen and (max-width: 576px) {
+    input [type="email"] {
+    font-size: 14px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-container > div {
+        width: 100%;
+    }
+} 
+
+
+
+
 /*
 3 major ways of using colors in CSS
 color name: blue, red, green, yellow

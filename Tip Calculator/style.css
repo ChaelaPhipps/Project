@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Montserrat' ;
+}
+
+body {
+    background-image: url(https://images2.alphacoders.com/862/862730.jpg);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(242, 223, 198);
+}
+
+.calculateArea {
+    background-color:burlywood;
+    padding: 30px;
+    opacity: 20;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(204, 115, 224, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.calculator label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.serverInput {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(69, 41, 4);
+    color: burlywood;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(37, 21, 0);
+}
+
+.results {
+    text-align: center;
+}
+
+.results h2 {
+    margin-bottom: 15px;
+}
+
+.results p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
